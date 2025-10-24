@@ -238,15 +238,14 @@ header .navbar {
 
 .about-section {
   min-height: 100vh;
-  background: 
-        linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.85) 0%,   
-            rgba(0, 0, 0, 0.75) 50%,
-            rgba(0, 0, 0, 0.3) 80%,
-            transparent 100%
-        ),
-        url('public/3.jpeg') center/cover no-repeat;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.85) 0%,
+      rgba(0, 0, 0, 0.75) 50%,
+      rgba(0, 0, 0, 0.3) 80%,
+      transparent 100%
+    ),
+    url("public/3.jpeg") center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -262,7 +261,7 @@ header .navbar {
 }
 
 .about-details {
-  flex: 0 0 50%; 
+  flex: 0 0 50%;
   color: var(--white-color);
   text-align: right;
   padding: 2rem;
@@ -332,7 +331,7 @@ header .navbar {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4.5rem; 
+  gap: 4.5rem;
 }
 
 .menu-section .menu-list .menu-item {
@@ -340,7 +339,7 @@ header .navbar {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 450px; 
+  width: 450px;
   border-radius: var(--border-radius-m);
   padding: 1.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -352,9 +351,9 @@ header .navbar {
 }
 
 .menu-section .menu-list .menu-item .menu-image {
-  width: 100%; 
-  max-width: 200px; 
-  height: 200px; 
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
   border-radius: var(--border-radius-s);
   margin-bottom: 1rem;
 }
@@ -508,13 +507,8 @@ header .navbar {
   box-shadow: 0 5px 15px rgba(59, 20, 28, 0.3);
 }
 
-
-
-
-
 /* Responsive design for 1024px */
-@media screen and (max-width: 1024px) { 
-  
+@media screen and (max-width: 1024px) {
   .menu-section .menu-list {
     gap: 1.5rem;
   }
@@ -523,13 +517,13 @@ header .navbar {
     font-size: var(--font-size-xl);
     margin-bottom: 2rem;
   }
-  
+
   .menu-section .menu-list .menu-item {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
   }
-  
+
   .menu-section .menu-list {
     gap: 1.5rem;
   }
@@ -537,30 +531,34 @@ header .navbar {
 
 /* Mobile (480px - 575px) */
 @media (max-width: 575px) {
+  .about-section {
+    background-attachment: fixed;
+  }
+
   .menu-section {
     padding: 2rem 0;
     min-height: auto;
   }
-  
+
   .menu-section .section-title {
     font-size: var(--font-size-l);
     margin-bottom: 1.5rem;
   }
-  
+
   .menu-section .menu-list .menu-item {
     padding: 1.25rem;
     margin: 0 0.5rem;
   }
-  
+
   .menu-section .menu-list .menu-item .menu-image {
     max-width: 150px;
     height: 150px;
   }
-  
+
   .menu-section .menu-list .menu-item .name {
     font-size: var(--font-size-m);
   }
-  
+
   .menu-section .menu-list .menu-item .price {
     font-size: var(--font-size-n);
   }
@@ -568,31 +566,34 @@ header .navbar {
   .contact-section {
     padding: 40px 0;
   }
-  
+
   .contact-section .section-title {
     font-size: var(--font-size-xl);
     margin-bottom: 2rem;
   }
-  
+
   .contact-section .contact-form {
     padding: 25px 20px;
   }
-  
+
   .contact-section .contact-info {
     padding: 15px;
     gap: 15px;
   }
-  
+
+  .contact-section .contact-info:nth-child(2) p {
+    display: inline;
+    margin-right: 10px;
+  }
+
   .contact-section .contact-info i {
     font-size: var(--font-size-m);
   }
-  
+
   .contact-section .contact-info p {
     font-size: var(--font-size-n);
   }
 }
-
-
 
 /* Responsive design */
 @media (max-width: 780px) {
@@ -684,7 +685,7 @@ header .navbar {
 
   .btn-secondary {
     margin-right: 20px;
-}
+  }
 
   .hero-details h1 {
     font-size: var(--font-size-xl);
@@ -713,29 +714,29 @@ header .navbar {
     padding: 30px 20px 20px;
   }
 
-  .hero-section .hero-details :is(.subtitle, 
-  .description), .about-section .about-details {
+  .hero-section .hero-details :is(.subtitle, .description),
+  .about-section .about-details {
     flex: 0 0 100%;
   }
 
   .contact-section {
     padding: 60px 0;
   }
-  
+
   .contact-section .section-content {
     flex-direction: column;
     gap: 40px;
   }
-  
+
   .contact-section .contact-info-list,
   .contact-section .contact-form {
     width: 100%;
   }
-  
+
   .contact-section .contact-form {
     padding: 30px 25px;
   }
-  
+
   .contact-section .contact-info {
     padding: 20px;
   }
