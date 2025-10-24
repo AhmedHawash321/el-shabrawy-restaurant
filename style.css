@@ -533,6 +533,8 @@ header .navbar {
 @media (max-width: 575px) {
   .about-section {
     background-attachment: fixed;
+    background-position: right center;
+    background-attachment: scroll;
   }
 
   .menu-section {
@@ -700,6 +702,8 @@ header .navbar {
   /* About Section  */
   .about-section {
     background-attachment: fixed;
+    background-position: right center;
+    background-attachment: scroll;
   }
 
   .about-section .section-content {
